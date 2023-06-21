@@ -1,13 +1,13 @@
 {
-  "name": "pug-definition",
-  "displayName": "Pug Definition",
+  "name": "pug-navigation",
+  "displayName": "Pug Navigation",
   "description": "Provide easy navigation to pug definition files and mixin declarations",
   "publisher": "MizanRifat",
   "icon": "img/logo.png",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mizan-Rifat/pug-definition.git"
+    "url": "https://github.com/Mizan-Rifat/pug-navigation.git"
   },
   "engines": {
     "vscode": "^1.79.0"
@@ -23,13 +23,13 @@
   "contributes": {
     "commands": [
       {
-        "command": "pug-definition.pug-definition",
-        "title": "Pug Definition"
+        "command": "pug-navigation.pug-navigation",
+        "title": "Pug Navigation"
       }
     ],
     "keybindings": [
       {
-        "command": "pug-definition.pug-definition",
+        "command": "pug-navigation.pug-navigation",
         "key": "ctrl+o",
         "mac": "ctrl+o",
         "when": "editorFocus && editorLangId == jade",

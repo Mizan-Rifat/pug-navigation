@@ -1,4 +1,4 @@
-# VS Code Extension - Pug Definition
+# VS Code Extension - Pug Navigation
 
 <div align="center">
   <img src="img/logo.png" alt="VS Code Extension Logo">
@@ -6,13 +6,13 @@
 
 ## Overview
 
-The Pug Definition extension for Visual Studio Code enhances your development experience by providing easy navigation to definition files and mixin declarations within your Pug (formerly Jade) templates. With just a few clicks, you can quickly jump to the extended or included partial file or navigate to the mixin definition file, saving you valuable time during Pug template development.
+The Pug Navigation extension for Visual Studio Code enhances your development experience by providing easy navigation to definition files and mixin declarations within your Pug (formerly Jade) templates. With just a few clicks, you can quickly jump to the extended or included partial file or navigate to the mixin definition file, saving you valuable time during Pug template development.
 
 ## Installation
 
 1. Launch Visual Studio Code.
 2. Open the Extensions view by clicking on the square icon on the left sidebar or by pressing `Ctrl+Shift+X`.
-3. Search for "Pug Definition" in the extension marketplace.
+3. Search for "Pug Navigation" in the extension marketplace.
 4. Click the "Install" button to install.
 
 ## Usage
@@ -35,7 +35,7 @@ No additional configuration is required for the extension to work. It automatica
 
 ## Troubleshooting
 
-If you encounter any issues while using the Pug Definition extension, try the following steps:
+If you encounter any issues while using the Pug Navigation extension, try the following steps:
 
 1. Make sure the extension is properly installed and enabled.
 2. Ensure that your Pug templates have the necessary extends or include statements.
@@ -53,4 +53,4 @@ This extension is released under the [MIT License](LICENSE).
 
 ### Version 1.0.0
 
-- Initial release of the Pug Definition extension.
+- Initial release of the Pug Navigation extension.

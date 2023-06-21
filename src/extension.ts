@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import { goToDefinationFile, goToMixinFile } from './functions';
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Pug Definition is now active!');
+  console.log('Pug Navigation is now active!');
 
   let hoverProvider = vscode.languages.registerHoverProvider('jade', {
     provideHover(document) {
@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
     }
   });
 
-  let disposable = vscode.commands.registerCommand('pug-definition.pug-definition', () => {
+  let disposable = vscode.commands.registerCommand('pug-navigation.pug-navigation', () => {
     vscode.window.withProgress(
       {
         location: vscode.ProgressLocation.Notification,
