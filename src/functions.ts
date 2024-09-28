@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 
 export const goToDefinationFile = async () => {
   const editor = vscode.window.activeTextEditor;
-  const regex = /^(extends|include)\s+([-./a-zA-Z\d]+)$/g;
+  const regex = /^\s*(extends|include)\s+([-./a-zA-Z\d_]+)$/g;
   const lineText = editor?.document.lineAt(editor.selection.active.line)?.text || '';
 
   const isImportStatement = regex.test(lineText);
@@ -21,7 +21,11 @@ export const goToDefinationFile = async () => {
         .join('/')
         .replace('/', '') + '/';
 
-    const targetFilePath = mainDir + targetFileFolderPath + '.pug';
+    let targetFilePath = mainDir + targetFileFolderPath;
+    // check if the file ends with .pug if not add it
+    if (!targetFilePath.endsWith('.pug')) {
+      targetFilePath += '.pug';
+    }
 
     vscode.workspace.openTextDocument(targetFilePath).then(document => {
       vscode.window.showTextDocument(document);
