@@ -4,7 +4,7 @@
   "description": "Provide easy navigation to pug definition files and mixin declarations",
   "publisher": "MizanRifat",
   "icon": "img/logo.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/Mizan-Rifat/pug-navigation.git"
