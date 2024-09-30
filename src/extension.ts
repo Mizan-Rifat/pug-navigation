@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
       const editor = vscode.window.activeTextEditor;
       if (editor) {
         const lineText = document.lineAt(editor.selection.active.line)?.text || '';
-        const regex = /^(extends|include)\s+([-./a-zA-Z\d]+)$/g;
+        const regex = /^\s*(extends|include)\s+([-./a-zA-Z\d_]+)$/g;
         const isImportStatement = regex.test(lineText);
         if (editor && isImportStatement) {
           return new vscode.Hover(`Click ctrl+o to go to the defination`);
